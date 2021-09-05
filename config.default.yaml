@@ -1,7 +1,6 @@
 proxy:
-  ftp: ftp://127.0.0.1:1081
-  http: socks5://127.0.0.1:1080
-  https: socks5://127.0.0.1:1080
+  http: http://127.0.0.1:7890
+  https: http://127.0.0.1:7890
 telegraph:
   access_token: # 第一次运行脚本自动生成，之后不可再更改，否则将失去历史文章编辑权限
   author_name: anonymous

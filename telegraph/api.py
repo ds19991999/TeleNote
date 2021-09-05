@@ -1,18 +1,5 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-"""
--------------------------------------------------
-   File Name：     utils.py
-   Description : https://telegra.ph/api
-   Author :        admin
-   date：          2019/12/4
--------------------------------------------------
-   Change Activity:
-                   2019/12/4
--------------------------------------------------
-"""
-
-__author__ = 'admin'
 
 
 import json
@@ -232,17 +219,3 @@ class Telegraph(object):
         }
         response = self._telegraph.method(method, values)
         return response
-
-if __name__ == "__main__":
-    access_token = "d0f2bea3fd70a5d4a0b59b310f6d75c135a0bf5fbab8354867523cf4b11f"
-    author_name = "anonymous"
-    author_url = "https://t.me/baba2333"
-    short_name = "ds19991999"
-    my_proxies = {
-        "http": "socks5://127.0.0.1:1080",
-        "https": "socks5://127.0.0.1:1080"
-    }
-    telegraph = Telegraph(access_token=access_token, my_proxies=my_proxies)
-    content = [{"tag":"p","children":["Hello,+world!"]}]
-    a = telegraph.create_page(title="2sddedec23d2", content=content, author_name=author_name, author_url=author_url, return_content=True)
-    print(a)
